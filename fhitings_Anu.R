@@ -86,7 +86,7 @@ print(UC_FILES)
 
 taxanomic.csv.m<-as.data.frame(read.delim(file=TAXAFILE,
                                           header=T,as.is=T,row.names=NULL,fill=F,sep=",",
-                                          quote="",comment.char="",blank.lines.skip=F),stringsAsFactors=F)
+                                          quote="",comment.char="",blank.lines.skip=F,strip.white=T),stringsAsFactors=F)
 
 
 bf.vec <- unlist(BLAST_FILES);
